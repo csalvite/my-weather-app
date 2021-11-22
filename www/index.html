@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="shortcut icon" href="./img/sun.png" />
+        <title>My Weather App</title>
+    </head>
+    <body class="day">
+        <header>
+            <div class="logo_container"></div>
+
+            <form action="#" method="GET" id="search_city">
+                <select name="select_city" id="select_city">
+                    <option value="Santiago de Compostela">
+                        Santiago de Compostela
+                    </option>
+                    <option value="A Coruna">La Coruña</option>
+                    <option value="Pontevedra">Pontevedra</option>
+                    <option value="Orense">Ourense</option>
+                    <option value="Vigo">Vigo</option>
+                    <option value="Lugo">Lugo</option>
+                </select>
+                <button id="request">Consultar</button>
+            </form>
+            <div class="actual_city"></div>
+        </header>
+
+        <main>
+            <section>
+                <section class="principal">
+                    <div class="main_icon"></div>
+
+                    <div class="container_city"></div>
+
+                    <div class="astro"></div>
+                </section>
+                <hr />
+                <section class="section-2"></section>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; César Alvite Liñán</p>
+            <p>&copy; API Weatherstack</p>
+        </footer>
+
+        <script type="module" src="./js/index.js"></script>
+    </body>
+</html>
